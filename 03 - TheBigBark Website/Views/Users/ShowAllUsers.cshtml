@@ -1,0 +1,69 @@
+﻿@using YE
+
+@model List<User>
+
+@{
+    ViewBag.Title = "ShowAllUsers";
+}
+
+
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+
+<script>
+
+</script>
+
+<h2>ShowAllUsers</h2>
+
+<table border="1" align="center">
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>ID</th>
+        <th>UserName</th>
+        <th>Password</th>
+        <th>Email</th>
+        <th>Role</th>
+        <th>User ID</th>
+    </tr>
+
+    @foreach (User u in Model)
+    {
+        <tr>
+            <td>@u.FirstName</td>
+            <td>@u.LastName</td>
+            <td>@u.ID</td>
+            <td>@u.UserName</td>
+            <td>@u.Password</td>
+            <td>@u.Email</td>
+            <td>
+                @if (@u.RoleID == 1)
+                {
+                    <p>Costomer</p>
+                }
+                else
+                {
+                    <p>Manager</p>
+                }
+            </td>
+            <td>@u.UserID</td>
+        </tr>
+    }
+
+</table>

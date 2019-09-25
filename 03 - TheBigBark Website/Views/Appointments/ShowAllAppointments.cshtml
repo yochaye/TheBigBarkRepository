@@ -1,0 +1,27 @@
+﻿@using YE
+
+@model List<Appointment>
+
+@{
+    ViewBag.Title = "ShowAllAppointments";
+}
+
+<h2>ShowAllAppointments</h2>
+
+<table border="1" align="center">
+    <tr>
+        <th>Appointment ID</th>
+        <th>Data</th>
+        <th>User ID</th>
+    </tr>
+
+    @foreach (Appointment a in Model)
+    {
+        <tr>
+            <td>@a.AppointmentID</td>
+            <td>@a.Date</td>
+            <td>@a.UserID</td>
+        </tr>
+    }
+
+</table>
