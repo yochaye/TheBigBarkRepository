@@ -8,16 +8,6 @@ C:\Users\8816\Desktop\3214\TheBigBarkSystem\01 - Data Access Layer\bin\Debug\Ent
 C:\Users\8816\Desktop\3214\TheBigBarkSystem\01 - Data Access Layer\obj\Debug\01 - Data Access Layer.csproj.CopyComplete
 C:\Users\8816\Desktop\3214\TheBigBarkSystem\01 - Data Access Layer\obj\Debug\01 - Data Access Layer.dll
 C:\Users\8816\Desktop\3214\TheBigBarkSystem\01 - Data Access Layer\obj\Debug\01 - Data Access Layer.pdb
-C:\TheBigBarkSystem\01 - Data Access Layer\bin\Debug\01 - Data Access Layer.dll.config
-C:\TheBigBarkSystem\01 - Data Access Layer\bin\Debug\01 - Data Access Layer.dll
-C:\TheBigBarkSystem\01 - Data Access Layer\bin\Debug\01 - Data Access Layer.pdb
-C:\TheBigBarkSystem\01 - Data Access Layer\bin\Debug\EntityFramework.dll
-C:\TheBigBarkSystem\01 - Data Access Layer\bin\Debug\EntityFramework.SqlServer.dll
-C:\TheBigBarkSystem\01 - Data Access Layer\bin\Debug\EntityFramework.xml
-C:\TheBigBarkSystem\01 - Data Access Layer\bin\Debug\EntityFramework.SqlServer.xml
-C:\TheBigBarkSystem\01 - Data Access Layer\obj\Debug\01 - Data Access Layer.csproj.CopyComplete
-C:\TheBigBarkSystem\01 - Data Access Layer\obj\Debug\01 - Data Access Layer.dll
-C:\TheBigBarkSystem\01 - Data Access Layer\obj\Debug\01 - Data Access Layer.pdb
 C:\Users\צילה אלבז\Desktop\TheBigBarkSystem\01 - Data Access Layer\bin\Debug\01 - Data Access Layer.dll.config
 C:\Users\צילה אלבז\Desktop\TheBigBarkSystem\01 - Data Access Layer\bin\Debug\01 - Data Access Layer.dll
 C:\Users\צילה אלבז\Desktop\TheBigBarkSystem\01 - Data Access Layer\bin\Debug\01 - Data Access Layer.pdb
@@ -30,3 +20,13 @@ C:\Users\צילה אלבז\Desktop\TheBigBarkSystem\01 - Data Access Layer\obj\D
 C:\Users\צילה אלבז\Desktop\TheBigBarkSystem\01 - Data Access Layer\obj\Debug\01 - Data Access Layer.csproj.CopyComplete
 C:\Users\צילה אלבז\Desktop\TheBigBarkSystem\01 - Data Access Layer\obj\Debug\01 - Data Access Layer.dll
 C:\Users\צילה אלבז\Desktop\TheBigBarkSystem\01 - Data Access Layer\obj\Debug\01 - Data Access Layer.pdb
+C:\TheBigBarkSystem\01 - Data Access Layer\bin\Debug\01 - Data Access Layer.dll.config
+C:\TheBigBarkSystem\01 - Data Access Layer\bin\Debug\01 - Data Access Layer.dll
+C:\TheBigBarkSystem\01 - Data Access Layer\bin\Debug\01 - Data Access Layer.pdb
+C:\TheBigBarkSystem\01 - Data Access Layer\bin\Debug\EntityFramework.dll
+C:\TheBigBarkSystem\01 - Data Access Layer\bin\Debug\EntityFramework.SqlServer.dll
+C:\TheBigBarkSystem\01 - Data Access Layer\bin\Debug\EntityFramework.xml
+C:\TheBigBarkSystem\01 - Data Access Layer\bin\Debug\EntityFramework.SqlServer.xml
+C:\TheBigBarkSystem\01 - Data Access Layer\obj\Debug\01 - Data Access Layer.csproj.CopyComplete
+C:\TheBigBarkSystem\01 - Data Access Layer\obj\Debug\01 - Data Access Layer.dll
+C:\TheBigBarkSystem\01 - Data Access Layer\obj\Debug\01 - Data Access Layer.pdb

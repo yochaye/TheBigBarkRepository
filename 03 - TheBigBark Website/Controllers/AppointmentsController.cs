@@ -12,14 +12,8 @@ namespace YE.Controllers
 
         public ActionResult ShowAllAppointments()
         {
-            List<Appointment> appointments = logic.GetAllAppointments();
-            return View(appointments);
-        }
-
-        public ActionResult ShowOneAppointment(int id)
-        {
-            Appointment a = logic.GetOneAppointment(id);
-            return View(a);
+            List<Appointment> appointment = logic.GetAllAppointments();
+            return View(appointment);
         }
     }
 }

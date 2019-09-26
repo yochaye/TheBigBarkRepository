@@ -109,3 +109,113 @@ C:\Users\צילה אלבז\Desktop\TheBigBarkSystem\04 - TheBigBark WebUI\obj\De
 C:\Users\צילה אלבז\Desktop\TheBigBarkSystem\04 - TheBigBark WebUI\obj\Debug\04 - TheBigBark WebUI.csproj.CopyComplete
 C:\Users\צילה אלבז\Desktop\TheBigBarkSystem\04 - TheBigBark WebUI\obj\Debug\04 - TheBigBark WebUI.dll
 C:\Users\צילה אלבז\Desktop\TheBigBarkSystem\04 - TheBigBark WebUI\obj\Debug\04 - TheBigBark WebUI.pdb
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\04 - TheBigBark WebUI.dll.config
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\04 - TheBigBark WebUI.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\04 - TheBigBark WebUI.pdb
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\csc.exe
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\csc.exe.config
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\csc.rsp
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\csi.exe
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\csi.exe.config
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\csi.rsp
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\Microsoft.Managed.Core.targets
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\System.AppContext.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\System.Collections.Immutable.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\System.Console.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\System.IO.Compression.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\System.IO.FileSystem.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\System.IO.Pipes.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\System.Reflection.Metadata.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\System.Security.AccessControl.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\System.Security.Claims.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\System.Security.Principal.Windows.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\System.ValueTuple.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\System.Xml.XmlDocument.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\System.Xml.XPath.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\vbc.exe
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\vbc.exe.config
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\vbc.rsp
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\VBCSCompiler.exe
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\roslyn\VBCSCompiler.exe.config
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\01 - Data Access Layer.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\02 - Business Logic.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\Antlr3.Runtime.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\EntityFramework.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\EntityFramework.SqlServer.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\Microsoft.AspNet.Identity.Core.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\Microsoft.Owin.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\Microsoft.Owin.Security.Cookies.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\Microsoft.Owin.Security.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\Microsoft.Owin.Security.Facebook.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\Microsoft.Owin.Security.Google.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\Microsoft.Owin.Security.OAuth.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\Microsoft.Owin.Security.Twitter.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\Microsoft.Web.Infrastructure.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\Newtonsoft.Json.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\Owin.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\System.Web.Helpers.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\System.Web.Mvc.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\System.Web.Optimization.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\System.Web.Razor.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\System.Web.WebPages.Deployment.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\System.Web.WebPages.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\System.Web.WebPages.Razor.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\WebGrease.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\01 - Data Access Layer.pdb
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\01 - Data Access Layer.dll.config
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\02 - Business Logic.pdb
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\02 - Business Logic.dll.config
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\System.Web.Helpers.xml
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\System.Web.Mvc.xml
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\System.Web.Optimization.xml
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\System.Web.Razor.xml
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\System.Web.WebPages.xml
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\System.Web.WebPages.Deployment.xml
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\System.Web.WebPages.Razor.xml
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\Newtonsoft.Json.xml
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\Antlr3.Runtime.pdb
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\EntityFramework.xml
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\EntityFramework.SqlServer.xml
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\Microsoft.AspNet.Identity.Core.xml
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\Microsoft.Owin.xml
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\Microsoft.Owin.Security.xml
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\Microsoft.Owin.Security.Facebook.xml
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\Microsoft.Owin.Security.Cookies.xml
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\Microsoft.Owin.Security.Google.xml
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\Microsoft.Owin.Security.Twitter.xml
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\Microsoft.Owin.Security.OAuth.xml
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\obj\Debug\04 - TheBigBark WebUI.csprojAssemblyReference.cache
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\obj\Debug\04 - TheBigBark WebUI.csproj.CopyComplete
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\obj\Debug\04 - TheBigBark WebUI.dll
+C:\TheBigBarkSystem\04 - TheBigBark WebUI\obj\Debug\04 - TheBigBark WebUI.pdb
