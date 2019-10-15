@@ -3,6 +3,12 @@
 ################################################################################
 
 /packages
+/01 - Data Access Layer/bin
+/01 - Data Access Layer/obj
+/02 - Business Logic /bin
+/02 - Business Logic /obj
+/04 - TheBigBark WebUI/bin
+/04 - TheBigBark WebUI/obj
 /.vs/TheBigBarkSystem
 /WebApplication4
 /WebApplication3

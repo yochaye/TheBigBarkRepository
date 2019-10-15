@@ -12,7 +12,7 @@ namespace YE
         public List<Appointment> GetAll()
         {
             return DB.Appointments
-                .Include(item=>item.AspNetUser)
+                .Include(item => item.AspNetUser)
                 .ToList();
         }
 
@@ -20,6 +20,15 @@ namespace YE
         {
             return DB.Appointments.Find(id);
         }
+
+        public List<Appointment> GetUserAppointments(string userId)
+        {
+            return DB.Appointments
+                .Include(item => item.AspNetUser)
+                .Where(item => item.UserId == userId)
+                .ToList();
+        }
+
 
         public void Add(Appointment appointment)
         {

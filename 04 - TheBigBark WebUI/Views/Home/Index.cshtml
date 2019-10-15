@@ -14,11 +14,8 @@
     }
 </style>
 
-@if (!this.Context.User.Identity.IsAuthenticated)
-{
-    <h1 align="center" style="accelerator: initial">Wellcom to the big bark store</h1>
-    <h2 align="center">Please register to our website!</h2>
-    <h3 align="center">If you already registered, please log in!</h3>
-}
+<body>
 
-<body></body>
+@Html.ActionLink("Add Appointment", "Create","Appointments")
+
+</body>

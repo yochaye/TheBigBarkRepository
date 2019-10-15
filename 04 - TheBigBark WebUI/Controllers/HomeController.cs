@@ -10,14 +10,23 @@ namespace _04___TheBigBark_WebUI.Controllers
     {
         public ActionResult Index()
         {
-            if (User.IsInRole("Administrators"))
+            //public
+            if (!User.Identity.IsAuthenticated)
             {
-                return RedirectToAction("Index", "Admin");
+                return View("PublicIndex");
             }
 
-            return View();
+            //admin
+            if (User.IsInRole("Administrators"))
+            {
+                return View("AdminIndex");
+            }
+
+            //normal user
+            return View("Index");
         }
 
+      
         [Route("Home/About")]
         public ActionResult About()
         {
@@ -33,5 +42,15 @@ namespace _04___TheBigBark_WebUI.Controllers
 
             return View();
         }
+
+
+
+        //ADMIN AREA::::
+        //[Authorize(Roles = "Administrator")]
+        //public ActionResult AdminIndex()
+        //{
+        //    return
+        //}
+
     }
 }
