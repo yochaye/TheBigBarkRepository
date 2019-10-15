@@ -10,9 +10,15 @@ namespace _04___TheBigBark_WebUI.Controllers
     {
         public ActionResult Index()
         {
+            if (User.IsInRole("Administrators"))
+            {
+                return RedirectToAction("Index", "Admin");
+            }
+
             return View();
         }
 
+        [Route("Home/About")]
         public ActionResult About()
         {
             ViewBag.Message = "TheBig Bark is a barber shop for animals the best in town.";
@@ -20,6 +26,7 @@ namespace _04___TheBigBark_WebUI.Controllers
             return View();
         }
 
+        [Route("Home/Contact")]
         public ActionResult Contact()
         {
             ViewBag.Message = "contact the big bark manager.";

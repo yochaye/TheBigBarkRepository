@@ -1,0 +1,56 @@
+﻿@using YE
+
+@model List<AspNetUser>
+
+@{
+    ViewBag.Title = "ShowAllUsers";
+}
+
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+
+<table border="1" align="center">
+    <tr>
+        <th>User Name</th>
+        <th>Email</th>
+        <th>User ID</th>
+        <th>Phone Number</th>
+        @*<th>AspNetUserRoles</th>*@
+        <th></th>
+    </tr>
+
+    @foreach (AspNetUser a in Model)
+        {
+            <tr>
+                <td>@a.UserName</td>
+                <td>@a.Email</td>
+                <td>@a.Id</td>
+                <td>@a.PhoneNumber</td>
+                @*<td>@a.AspNetUserRoles.IsReadOnly</td>*@
+                @*<td>@a.</td>*@
+                <td>
+                    @Html.ActionLink("Delete", "Delete", new { id=a.Id })
+                </td>
+
+
+            </tr>
+        }
+
+</table>
+
+<h2>Get All Users Page</h2>

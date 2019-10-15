@@ -7,9 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01 - Data Access Layer", "0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02 - Business Logic", "02 - Business Logic\02 - Business Logic.csproj", "{C1C4E669-06DF-4C24-B2BE-8BB35363C96C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04 - TheBigBark WebUI", "04 - TheBigBark WebUI\04 - TheBigBark WebUI.csproj", "{BACBC002-4382-4CA6-8B8F-2D899B9677A7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03 - TheBigBark WebUI", "04 - TheBigBark WebUI\03 - TheBigBark WebUI.csproj", "{BACBC002-4382-4CA6-8B8F-2D899B9677A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03 - TheBigBark Website", "03 - TheBigBark Website\03 - TheBigBark Website.csproj", "{EE78CECD-F579-4100-AF40-3BF066E74F7B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{4E5B917A-E132-4A5C-8EEE-D39BDFA5A3BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication4", "WebApplication4\WebApplication4.csproj", "{C94C3C82-C07F-4E02-830C-19CF71A2BBC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{40508F88-AE76-4864-9066-3467250F455E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,13 +33,21 @@ Global
 		{BACBC002-4382-4CA6-8B8F-2D899B9677A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BACBC002-4382-4CA6-8B8F-2D899B9677A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BACBC002-4382-4CA6-8B8F-2D899B9677A7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EE78CECD-F579-4100-AF40-3BF066E74F7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EE78CECD-F579-4100-AF40-3BF066E74F7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EE78CECD-F579-4100-AF40-3BF066E74F7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EE78CECD-F579-4100-AF40-3BF066E74F7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C94C3C82-C07F-4E02-830C-19CF71A2BBC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C94C3C82-C07F-4E02-830C-19CF71A2BBC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C94C3C82-C07F-4E02-830C-19CF71A2BBC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C94C3C82-C07F-4E02-830C-19CF71A2BBC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40508F88-AE76-4864-9066-3467250F455E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40508F88-AE76-4864-9066-3467250F455E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40508F88-AE76-4864-9066-3467250F455E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40508F88-AE76-4864-9066-3467250F455E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C94C3C82-C07F-4E02-830C-19CF71A2BBC6} = {4E5B917A-E132-4A5C-8EEE-D39BDFA5A3BA}
+		{40508F88-AE76-4864-9066-3467250F455E} = {4E5B917A-E132-4A5C-8EEE-D39BDFA5A3BA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {821F90FF-C14F-4736-9CCE-30F58E3D5CEA}

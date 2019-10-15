@@ -14,10 +14,10 @@ namespace YE
     
     public partial class Appointment
     {
-        public int AppointmentID { get; set; }
+        public int Id { get; set; }
+        public string UserId { get; set; }
         public System.DateTime Date { get; set; }
-        public int UserID { get; set; }
     
-        public virtual User User { get; set; }
+        public virtual AspNetUser AspNetUser { get; set; }
     }
 }

@@ -30,3 +30,4 @@ C:\TheBigBarkSystem\01 - Data Access Layer\bin\Debug\EntityFramework.SqlServer.x
 C:\TheBigBarkSystem\01 - Data Access Layer\obj\Debug\01 - Data Access Layer.csproj.CopyComplete
 C:\TheBigBarkSystem\01 - Data Access Layer\obj\Debug\01 - Data Access Layer.dll
 C:\TheBigBarkSystem\01 - Data Access Layer\obj\Debug\01 - Data Access Layer.pdb
+C:\TheBigBarkSystem\01 - Data Access Layer\obj\Debug\01 - Data Access Layer.csprojAssemblyReference.cache
