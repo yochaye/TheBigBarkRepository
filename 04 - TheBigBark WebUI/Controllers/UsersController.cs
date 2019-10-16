@@ -11,15 +11,15 @@ namespace _04___TheBigBark_WebUI.Controllers
     {
         private UsersBL usersLogic = new UsersBL();
 
-    
+
         //ADMIN AREA::::
+        //GET: Users
         [Authorize(Roles = "Administrators")]
         public ActionResult Index()
         {
             List<AspNetUser> users = usersLogic.GetAll();
             return View(users);
         }
-
 
         [Authorize()]
         public ActionResult Delete(string id)
@@ -33,7 +33,6 @@ namespace _04___TheBigBark_WebUI.Controllers
             {
                 return HttpNotFound();
             }
-
             return View(user);
         }
 
@@ -46,8 +45,5 @@ namespace _04___TheBigBark_WebUI.Controllers
             users.Remove(id);
             return RedirectToAction("Index");
         }
-
-
-
     }
 }

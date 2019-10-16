@@ -23,7 +23,6 @@ namespace _04___TheBigBark_WebUI.Controllers
             return View(appointments);
         }
 
-
         // GET: Appointments1/Create
         public ActionResult Create()
         {
@@ -66,7 +65,6 @@ namespace _04___TheBigBark_WebUI.Controllers
             {
                 return HttpNotFound();
             }
-
             return View(appointment);
         }
 
@@ -80,17 +78,13 @@ namespace _04___TheBigBark_WebUI.Controllers
             return RedirectToAction("Index");
         }
 
-
-
         //ADMIN AREA::::
-
-        // GET: Appointments
-        [Authorize(Roles = "Administrator")]
+        //GET: Appointments
+        [Authorize(Roles = "Administrators")]
         public ActionResult AdminIndex()
         {
             List<Appointment> appointments = logic.GetAll();
-            return View("Index", appointments);
+            return View("AdminIndex", appointments);
         }
-
     }
 }

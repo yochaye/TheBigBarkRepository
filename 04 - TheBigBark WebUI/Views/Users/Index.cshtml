@@ -6,6 +6,8 @@
     ViewBag.Title = "ShowAllUsers";
 }
 
+<h2>All Users</h2>
+
 <style>
     table {
         font-family: arial, sans-serif;
@@ -30,7 +32,6 @@
         <th>Email</th>
         <th>User ID</th>
         <th>Phone Number</th>
-        @*<th>AspNetUserRoles</th>*@
         <th></th>
     </tr>
 
@@ -41,16 +42,9 @@
                 <td>@a.Email</td>
                 <td>@a.Id</td>
                 <td>@a.PhoneNumber</td>
-                @*<td>@a.AspNetUserRoles.IsReadOnly</td>*@
-                @*<td>@a.</td>*@
                 <td>
                     @Html.ActionLink("Delete", "Delete", new { id=a.Id })
                 </td>
-
-
             </tr>
         }
-
 </table>
-
-<h2>Get All Users Page</h2>
