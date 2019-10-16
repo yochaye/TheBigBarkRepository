@@ -12,3 +12,17 @@ C:\TheBigBarkSystem\02 - Business Logic\obj\Debug\02 - Business Logic.csprojAsse
 C:\TheBigBarkSystem\02 - Business Logic\obj\Debug\02 - Business Logic.csproj.CopyComplete
 C:\TheBigBarkSystem\02 - Business Logic\obj\Debug\02 - Business Logic.dll
 C:\TheBigBarkSystem\02 - Business Logic\obj\Debug\02 - Business Logic.pdb
+c:\Temp\2\TheBigBarkRepository-master\02 - Business Logic\bin\Debug\02 - Business Logic.dll.config
+c:\Temp\2\TheBigBarkRepository-master\02 - Business Logic\bin\Debug\02 - Business Logic.dll
+c:\Temp\2\TheBigBarkRepository-master\02 - Business Logic\bin\Debug\02 - Business Logic.pdb
+c:\Temp\2\TheBigBarkRepository-master\02 - Business Logic\bin\Debug\01 - Data Access Layer.dll
+c:\Temp\2\TheBigBarkRepository-master\02 - Business Logic\bin\Debug\EntityFramework.dll
+c:\Temp\2\TheBigBarkRepository-master\02 - Business Logic\bin\Debug\EntityFramework.SqlServer.dll
+c:\Temp\2\TheBigBarkRepository-master\02 - Business Logic\bin\Debug\01 - Data Access Layer.pdb
+c:\Temp\2\TheBigBarkRepository-master\02 - Business Logic\bin\Debug\01 - Data Access Layer.dll.config
+c:\Temp\2\TheBigBarkRepository-master\02 - Business Logic\bin\Debug\EntityFramework.xml
+c:\Temp\2\TheBigBarkRepository-master\02 - Business Logic\bin\Debug\EntityFramework.SqlServer.xml
+c:\Temp\2\TheBigBarkRepository-master\02 - Business Logic\obj\Debug\02 - Business Logic.csprojAssemblyReference.cache
+c:\Temp\2\TheBigBarkRepository-master\02 - Business Logic\obj\Debug\02 - Business Logic.csproj.CopyComplete
+c:\Temp\2\TheBigBarkRepository-master\02 - Business Logic\obj\Debug\02 - Business Logic.dll
+c:\Temp\2\TheBigBarkRepository-master\02 - Business Logic\obj\Debug\02 - Business Logic.pdb
