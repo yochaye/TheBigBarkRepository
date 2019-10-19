@@ -12,6 +12,8 @@ namespace _04___TheBigBark_WebUI.Models
         public string Email { get; set; }
         public string PhoneNumber { get; set; }
         public string UserName { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
         public string Appointments { get; set; }   //csv
 
         public UserModel()
@@ -25,6 +27,8 @@ namespace _04___TheBigBark_WebUI.Models
             Email = db.Email;
             PhoneNumber = db.PhoneNumber;
             UserName = db.UserName;
+            FirstName = db.FirstName;
+            LastName = db.LastName;
             Appointments = string.Join(",", db.Appointments.Select(item => item.ToString()));
         }
     }

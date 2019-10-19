@@ -5,6 +5,16 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="TheBigBarkDATABASEModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="__MigrationHistory">
+          <Key>
+            <PropertyRef Name="MigrationId" />
+            <PropertyRef Name="ContextKey" />
+          </Key>
+          <Property Name="MigrationId" Type="nvarchar" MaxLength="150" Nullable="false" />
+          <Property Name="ContextKey" Type="nvarchar" MaxLength="300" Nullable="false" />
+          <Property Name="Model" Type="varbinary(max)" Nullable="false" />
+          <Property Name="ProductVersion" Type="nvarchar" MaxLength="32" Nullable="false" />
+        </EntityType>
         <EntityType Name="Appointments">
           <Key>
             <PropertyRef Name="Id" />
@@ -64,6 +74,8 @@
           <Property Name="LockoutEnabled" Type="bit" Nullable="false" />
           <Property Name="AccessFailedCount" Type="int" Nullable="false" />
           <Property Name="UserName" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="150" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="150" />
         </EntityType>
         <EntityType Name="Roles">
           <Key>
@@ -142,6 +154,7 @@
         </Association>
         <Function Name="SelectAllAppointments" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <EntityContainer Name="TheBigBarkDATABASEModelStoreContainer">
+          <EntitySet Name="__MigrationHistory" EntityType="Self.__MigrationHistory" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Appointments" EntityType="Self.Appointments" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRoles" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="AspNetUserClaims" EntityType="Self.AspNetUserClaims" Schema="dbo" store:Type="Tables" />
@@ -191,11 +204,11 @@
             <Parameter Name="diagramname" Mode="In" Type="String" />
             <Parameter Name="owner_id" Mode="In" Type="Int32" />
           </FunctionImport>
-          <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(TheBigBarkDATABASEModel.sp_helpdiagramdefinition_Result)">
+          <FunctionImport Name="sp_helpdiagramdefinition">
             <Parameter Name="diagramname" Mode="In" Type="String" />
             <Parameter Name="owner_id" Mode="In" Type="Int32" />
           </FunctionImport>
-          <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(TheBigBarkDATABASEModel.sp_helpdiagrams_Result)">
+          <FunctionImport Name="sp_helpdiagrams">
             <Parameter Name="diagramname" Mode="In" Type="String" />
             <Parameter Name="owner_id" Mode="In" Type="Int32" />
           </FunctionImport>
@@ -205,6 +218,7 @@
             <Parameter Name="new_diagramname" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="sp_upgraddiagrams" />
+          <EntitySet Name="C__MigrationHistory" EntityType="TheBigBarkDATABASEModel.C__MigrationHistory" />
           <EntitySet Name="Appointments" EntityType="TheBigBarkDATABASEModel.Appointment" />
           <EntitySet Name="AspNetRoles" EntityType="TheBigBarkDATABASEModel.AspNetRole" />
           <EntitySet Name="AspNetUserClaims" EntityType="TheBigBarkDATABASEModel.AspNetUserClaim" />
@@ -213,63 +227,62 @@
           <EntitySet Name="AspNetUsers" EntityType="TheBigBarkDATABASEModel.AspNetUser" />
           <EntitySet Name="Roles" EntityType="TheBigBarkDATABASEModel.Role" />
           <AssociationSet Name="FK_Appointment_AspNetUsers" Association="TheBigBarkDATABASEModel.FK_Appointment_AspNetUsers">
-            <End EntitySet="AspNetUsers" Role="AspNetUser" />
-            <End EntitySet="Appointments" Role="Appointment" />
+            <End Role="AspNetUser" EntitySet="AspNetUsers" />
+            <End Role="Appointment" EntitySet="Appointments" />
           </AssociationSet>
           <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId" Association="TheBigBarkDATABASEModel.FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
-            <End EntitySet="AspNetRoles" Role="AspNetRole" />
-            <End EntitySet="AspNetUserRoles" Role="AspNetUserRole" />
+            <End Role="AspNetRole" EntitySet="AspNetRoles" />
+            <End Role="AspNetUserRole" EntitySet="AspNetUserRoles" />
           </AssociationSet>
           <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="TheBigBarkDATABASEModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
-            <End EntitySet="AspNetUsers" Role="AspNetUser" />
-            <End EntitySet="AspNetUserClaims" Role="AspNetUserClaim" />
+            <End Role="AspNetUser" EntitySet="AspNetUsers" />
+            <End Role="AspNetUserClaim" EntitySet="AspNetUserClaims" />
           </AssociationSet>
           <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="TheBigBarkDATABASEModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
-            <End EntitySet="AspNetUsers" Role="AspNetUser" />
-            <End EntitySet="AspNetUserLogins" Role="AspNetUserLogin" />
+            <End Role="AspNetUser" EntitySet="AspNetUsers" />
+            <End Role="AspNetUserLogin" EntitySet="AspNetUserLogins" />
           </AssociationSet>
           <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId" Association="TheBigBarkDATABASEModel.FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
-            <End EntitySet="AspNetUsers" Role="AspNetUser" />
-            <End EntitySet="AspNetUserRoles" Role="AspNetUserRole" />
+            <End Role="AspNetUser" EntitySet="AspNetUsers" />
+            <End Role="AspNetUserRole" EntitySet="AspNetUserRoles" />
           </AssociationSet>
           <FunctionImport Name="SelectAllAppointments" ReturnType="Collection(TheBigBarkDATABASEModel.SelectAllAppointments_Result)" />
           </EntityContainer>
-        <ComplexType Name="sp_helpdiagramdefinition_Result">
-          <Property Type="Int32" Name="version" Nullable="true" />
-          <Property Type="Binary" Name="definition" Nullable="true" />
-        </ComplexType>
-        <ComplexType Name="sp_helpdiagrams_Result">
-          <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
-          <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
-          <Property Type="Int32" Name="ID" Nullable="false" />
-          <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
-          <Property Type="Int32" Name="OwnerID" Nullable="false" />
-        </ComplexType>
+        <EntityType Name="C__MigrationHistory">
+          <Key>
+            <PropertyRef Name="MigrationId" />
+            <PropertyRef Name="ContextKey" />
+          </Key>
+          <Property Name="MigrationId" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="ContextKey" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="Model" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+          <Property Name="ProductVersion" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+        </EntityType>
         <EntityType Name="Appointment">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
-          <Property Name="UserId" MaxLength="128" FixedLength="false" Unicode="true" Type="String" />
-          <Property Name="Date" Nullable="false" Precision="3" Type="DateTime" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
           <NavigationProperty Name="AspNetUser" Relationship="TheBigBarkDATABASEModel.FK_Appointment_AspNetUsers" FromRole="Appointment" ToRole="AspNetUser" />
         </EntityType>
         <EntityType Name="AspNetRole">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" Type="String" />
-          <Property Name="Name" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" Type="String" />
+          <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="AspNetUserRoles" Relationship="TheBigBarkDATABASEModel.FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId" FromRole="AspNetRole" ToRole="AspNetUserRole" />
         </EntityType>
         <EntityType Name="AspNetUserClaim">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
-          <Property Name="UserId" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" Type="String" />
-          <Property Name="ClaimType" MaxLength="Max" FixedLength="false" Unicode="true" Type="String" />
-          <Property Name="ClaimValue" MaxLength="Max" FixedLength="false" Unicode="true" Type="String" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="ClaimType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ClaimValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="AspNetUser" Relationship="TheBigBarkDATABASEModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUserClaim" ToRole="AspNetUser" />
         </EntityType>
         <EntityType Name="AspNetUserLogin">
@@ -278,9 +291,9 @@
             <PropertyRef Name="ProviderKey" />
             <PropertyRef Name="UserId" />
           </Key>
-          <Property Name="LoginProvider" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" Type="String" />
-          <Property Name="ProviderKey" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" Type="String" />
-          <Property Name="UserId" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" Type="String" />
+          <Property Name="LoginProvider" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="ProviderKey" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="AspNetUser" Relationship="TheBigBarkDATABASEModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUserLogin" ToRole="AspNetUser" />
         </EntityType>
         <EntityType Name="AspNetUserRole">
@@ -288,9 +301,9 @@
             <PropertyRef Name="UserId" />
             <PropertyRef Name="RoleId" />
           </Key>
-          <Property Name="UserId" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" Type="String" />
-          <Property Name="RoleId" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" Type="String" />
-          <Property Name="RoleName" MaxLength="10" FixedLength="true" Unicode="true" Type="String" />
+          <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="RoleId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="RoleName" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
           <NavigationProperty Name="AspNetRole" Relationship="TheBigBarkDATABASEModel.FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId" FromRole="AspNetUserRole" ToRole="AspNetRole" />
           <NavigationProperty Name="AspNetUser" Relationship="TheBigBarkDATABASEModel.FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId" FromRole="AspNetUserRole" ToRole="AspNetUser" />
         </EntityType>
@@ -298,18 +311,20 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" Type="String" />
-          <Property Name="Email" MaxLength="256" FixedLength="false" Unicode="true" Type="String" />
-          <Property Name="EmailConfirmed" Nullable="false" Type="Boolean" />
-          <Property Name="PasswordHash" MaxLength="Max" FixedLength="false" Unicode="true" Type="String" />
-          <Property Name="SecurityStamp" MaxLength="Max" FixedLength="false" Unicode="true" Type="String" />
-          <Property Name="PhoneNumber" MaxLength="Max" FixedLength="false" Unicode="true" Type="String" />
-          <Property Name="PhoneNumberConfirmed" Nullable="false" Type="Boolean" />
-          <Property Name="TwoFactorEnabled" Nullable="false" Type="Boolean" />
-          <Property Name="LockoutEndDateUtc" Precision="3" Type="DateTime" />
-          <Property Name="LockoutEnabled" Nullable="false" Type="Boolean" />
-          <Property Name="AccessFailedCount" Nullable="false" Type="Int32" />
-          <Property Name="UserName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" Type="String" />
+          <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+          <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PhoneNumberConfirmed" Type="Boolean" Nullable="false" />
+          <Property Name="TwoFactorEnabled" Type="Boolean" Nullable="false" />
+          <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="3" />
+          <Property Name="LockoutEnabled" Type="Boolean" Nullable="false" />
+          <Property Name="AccessFailedCount" Type="Int32" Nullable="false" />
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="FirstName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="LastName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Appointments" Relationship="TheBigBarkDATABASEModel.FK_Appointment_AspNetUsers" FromRole="AspNetUser" ToRole="Appointment" />
           <NavigationProperty Name="AspNetUserClaims" Relationship="TheBigBarkDATABASEModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUser" ToRole="AspNetUserClaim" />
           <NavigationProperty Name="AspNetUserLogins" Relationship="TheBigBarkDATABASEModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUser" ToRole="AspNetUserLogin" />
@@ -319,12 +334,12 @@
           <Key>
             <PropertyRef Name="RoleID" />
           </Key>
-          <Property Name="RoleID" Nullable="false" Type="Int32" />
-          <Property Name="RoleName" MaxLength="20" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="RoleID" Type="Int32" Nullable="false" />
+          <Property Name="RoleName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
         </EntityType>
         <Association Name="FK_Appointment_AspNetUsers">
-          <End Type="TheBigBarkDATABASEModel.AspNetUser" Multiplicity="0..1" Role="AspNetUser" />
-          <End Type="TheBigBarkDATABASEModel.Appointment" Multiplicity="*" Role="Appointment" />
+          <End Type="TheBigBarkDATABASEModel.AspNetUser" Role="AspNetUser" Multiplicity="0..1" />
+          <End Type="TheBigBarkDATABASEModel.Appointment" Role="Appointment" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="AspNetUser">
               <PropertyRef Name="Id" />
@@ -335,10 +350,10 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
-          <End Type="TheBigBarkDATABASEModel.AspNetRole" Multiplicity="1" Role="AspNetRole">
+          <End Type="TheBigBarkDATABASEModel.AspNetRole" Role="AspNetRole" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Type="TheBigBarkDATABASEModel.AspNetUserRole" Multiplicity="*" Role="AspNetUserRole" />
+          <End Type="TheBigBarkDATABASEModel.AspNetUserRole" Role="AspNetUserRole" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="AspNetRole">
               <PropertyRef Name="Id" />
@@ -349,10 +364,10 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
-          <End Type="TheBigBarkDATABASEModel.AspNetUser" Multiplicity="1" Role="AspNetUser">
+          <End Type="TheBigBarkDATABASEModel.AspNetUser" Role="AspNetUser" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Type="TheBigBarkDATABASEModel.AspNetUserClaim" Multiplicity="*" Role="AspNetUserClaim" />
+          <End Type="TheBigBarkDATABASEModel.AspNetUserClaim" Role="AspNetUserClaim" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="AspNetUser">
               <PropertyRef Name="Id" />
@@ -363,10 +378,10 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
-          <End Type="TheBigBarkDATABASEModel.AspNetUser" Multiplicity="1" Role="AspNetUser">
+          <End Type="TheBigBarkDATABASEModel.AspNetUser" Role="AspNetUser" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Type="TheBigBarkDATABASEModel.AspNetUserLogin" Multiplicity="*" Role="AspNetUserLogin" />
+          <End Type="TheBigBarkDATABASEModel.AspNetUserLogin" Role="AspNetUserLogin" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="AspNetUser">
               <PropertyRef Name="Id" />
@@ -377,10 +392,10 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
-          <End Type="TheBigBarkDATABASEModel.AspNetUser" Multiplicity="1" Role="AspNetUser">
+          <End Type="TheBigBarkDATABASEModel.AspNetUser" Role="AspNetUser" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Type="TheBigBarkDATABASEModel.AspNetUserRole" Multiplicity="*" Role="AspNetUserRole" />
+          <End Type="TheBigBarkDATABASEModel.AspNetUserRole" Role="AspNetUserRole" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="AspNetUser">
               <PropertyRef Name="Id" />
@@ -395,6 +410,8 @@
           <Property Type="DateTime" Name="Date" Nullable="false" Precision="23" />
           <Property Type="String" Name="UserId" Nullable="true" MaxLength="128" />
           <Property Type="String" Name="UserName" Nullable="false" MaxLength="256" />
+          <Property Type="String" Name="FirstName" Nullable="true" MaxLength="150" />
+          <Property Type="String" Name="LastName" Nullable="true" MaxLength="150" />
         </ComplexType>
         </Schema>
     </edmx:ConceptualModels>
@@ -402,6 +419,16 @@
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="TheBigBarkDATABASEModelStoreContainer" CdmEntityContainer="TheBigBarkDATABASEEntities">
+          <EntitySetMapping Name="C__MigrationHistory">
+            <EntityTypeMapping TypeName="TheBigBarkDATABASEModel.C__MigrationHistory">
+              <MappingFragment StoreEntitySet="__MigrationHistory">
+                <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+                <ScalarProperty Name="Model" ColumnName="Model" />
+                <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
+                <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="Appointments">
             <EntityTypeMapping TypeName="TheBigBarkDATABASEModel.Appointment">
               <MappingFragment StoreEntitySet="Appointments">
@@ -450,6 +477,8 @@
           <EntitySetMapping Name="AspNetUsers">
             <EntityTypeMapping TypeName="TheBigBarkDATABASEModel.AspNetUser">
               <MappingFragment StoreEntitySet="AspNetUsers">
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
                 <ScalarProperty Name="UserName" ColumnName="UserName" />
                 <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
                 <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
@@ -480,6 +509,8 @@
                 <ScalarProperty Name="Date" ColumnName="Date" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
                 <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>

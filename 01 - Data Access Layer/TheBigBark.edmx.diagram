@@ -5,13 +5,14 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="3c0f5f0a1b104fb4ac16f468813a61ee" Name="Diagram1" ZoomLevel="72">
-        <EntityTypeShape EntityType="TheBigBarkDATABASEModel.Appointment" PointX="3" PointY="10.625" Width="1.5" />
-        <EntityTypeShape EntityType="TheBigBarkDATABASEModel.AspNetRole" PointX="3.75" PointY="5.375" Width="1.5" />
-        <EntityTypeShape EntityType="TheBigBarkDATABASEModel.AspNetUserClaim" PointX="3" PointY="2.625" Width="1.5" />
-        <EntityTypeShape EntityType="TheBigBarkDATABASEModel.AspNetUserLogin" PointX="3" PointY="8.125" Width="1.5" />
-        <EntityTypeShape EntityType="TheBigBarkDATABASEModel.AspNetUserRole" PointX="6" PointY="5.25" Width="1.5" />
-        <EntityTypeShape EntityType="TheBigBarkDATABASEModel.AspNetUser" PointX="0.75" PointY="4.125" Width="1.5" />
-        <EntityTypeShape EntityType="TheBigBarkDATABASEModel.Role" PointX="5.75" PointY="0.75" Width="1.5" />
+        <EntityTypeShape EntityType="TheBigBarkDATABASEModel.C__MigrationHistory" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="TheBigBarkDATABASEModel.Appointment" Width="1.5" PointX="3" PointY="10.625" />
+        <EntityTypeShape EntityType="TheBigBarkDATABASEModel.AspNetRole" Width="1.5" PointX="3.75" PointY="5.375" />
+        <EntityTypeShape EntityType="TheBigBarkDATABASEModel.AspNetUserClaim" Width="1.5" PointX="3" PointY="2.625" />
+        <EntityTypeShape EntityType="TheBigBarkDATABASEModel.AspNetUserLogin" Width="1.5" PointX="3" PointY="8.125" />
+        <EntityTypeShape EntityType="TheBigBarkDATABASEModel.AspNetUserRole" Width="1.5" PointX="6" PointY="5.25" />
+        <EntityTypeShape EntityType="TheBigBarkDATABASEModel.AspNetUser" Width="1.5" PointX="0.75" PointY="4" />
+        <EntityTypeShape EntityType="TheBigBarkDATABASEModel.Role" Width="1.5" PointX="7.75" PointY="0.75" />
         <AssociationConnector Association="TheBigBarkDATABASEModel.FK_Appointment_AspNetUsers" />
         <AssociationConnector Association="TheBigBarkDATABASEModel.FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId" />
         <AssociationConnector Association="TheBigBarkDATABASEModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" />

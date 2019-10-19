@@ -20,7 +20,7 @@ namespace _04___TheBigBark_WebUI.Controllers
         public ActionResult Index()
         {
             string userId = User.Identity.GetUserId();
-            List<Appointment> appointments = logic.GetUserAppointments(userId);
+            List<AppointmentModel> appointments = logic.GetUserAppointments(userId).ToSelectedList(ViewModelExtensions.ToView);
             return View(appointments);
         }
 
@@ -82,10 +82,10 @@ namespace _04___TheBigBark_WebUI.Controllers
         //ADMIN AREA::::
         //GET: Appointments
         [Authorize(Roles = "Administrators")]
-        public ActionResult AdminIndex()
+        public ActionResult AdminIndex(DateTime? sDate = null, DateTime? eDate = null, string name = null)
         {
-            List<SelectAllAppointments_Result> appointments = logic.GetAll();
-            List<AppointmentModel> x = appointments.Select(item => new AppointmentModel(item)).ToList();
+            List<SelectAllAppointments_Result> dbAppointments = logic.GetAll(sDate, eDate, name);
+            List<AppointmentModel> x = dbAppointments.ToSelectedList(ViewModelExtensions.ToView);
             return View("AdminIndex", x);
         }
     }

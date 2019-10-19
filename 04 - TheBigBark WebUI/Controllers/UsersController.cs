@@ -18,9 +18,10 @@ namespace _04___TheBigBark_WebUI.Controllers
         [Authorize(Roles = "Administrators")]
         public ActionResult Index()
         {
-            List<AspNetUser> users = usersLogic.GetAll();
-            var x = users.Select(item => new UserModel(item)).ToList();
-            return View(x);
+            List<AspNetUser> dbUsers = usersLogic.GetAll();
+            List<UserModel> users = dbUsers.ToSelectedList(user => user.ToView());
+            //List<UserModel> users = ViewModelExtensions.ToSelectedList(dbUsers,  user => ViewModelExtensions.ToView(user));
+            return View(users);
         }
 
         [Authorize()]
