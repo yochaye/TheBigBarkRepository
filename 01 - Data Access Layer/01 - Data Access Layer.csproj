@@ -71,6 +71,7 @@
     <Compile Include="C__MigrationHistory.cs">
       <DependentUpon>TheBigBark.tt</DependentUpon>
     </Compile>
+    <Compile Include="ModelExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Role.cs">
       <DependentUpon>TheBigBark.tt</DependentUpon>

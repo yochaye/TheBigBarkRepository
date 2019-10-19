@@ -1,3 +1,5 @@
+c:\Temp\2\TheBigBarkRepository-master\WebApplication1\obj\Debug\WebApplication1.dll
+c:\Temp\2\TheBigBarkRepository-master\WebApplication1\obj\Debug\WebApplication1.pdb
 C:\TheBigBarkSystem\WebApplication1\bin\WebApplication1.dll.config
 C:\TheBigBarkSystem\WebApplication1\bin\WebApplication1.dll
 C:\TheBigBarkSystem\WebApplication1\bin\WebApplication1.pdb
@@ -108,5 +110,3 @@ C:\TheBigBarkSystem\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyRefe
 C:\TheBigBarkSystem\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
 C:\TheBigBarkSystem\WebApplication1\obj\Debug\WebApplication1.dll
 C:\TheBigBarkSystem\WebApplication1\obj\Debug\WebApplication1.pdb
-c:\Temp\2\TheBigBarkRepository-master\WebApplication1\obj\Debug\WebApplication1.dll
-c:\Temp\2\TheBigBarkRepository-master\WebApplication1\obj\Debug\WebApplication1.pdb
