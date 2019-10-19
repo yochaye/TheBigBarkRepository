@@ -68,21 +68,18 @@
     <Compile Include="AspNetUserRole.cs">
       <DependentUpon>TheBigBark.tt</DependentUpon>
     </Compile>
-    <Compile Include="C__MigrationHistory.cs">
-      <DependentUpon>TheBigBark.tt</DependentUpon>
-    </Compile>
     <Compile Include="ModelExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Role.cs">
+      <DependentUpon>TheBigBark.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SelectAllAppointments_Result.cs">
       <DependentUpon>TheBigBark.tt</DependentUpon>
     </Compile>
     <Compile Include="sp_helpdiagramdefinition_Result.cs">
       <DependentUpon>TheBigBark.tt</DependentUpon>
     </Compile>
     <Compile Include="sp_helpdiagrams_Result.cs">
-      <DependentUpon>TheBigBark.tt</DependentUpon>
-    </Compile>
-    <Compile Include="sysdiagram.cs">
       <DependentUpon>TheBigBark.tt</DependentUpon>
     </Compile>
     <Compile Include="TheBigBark.Context.cs">

@@ -20,11 +20,19 @@ namespace _04___TheBigBark_WebUI.Models
 
         }
 
-        public AppointmentModel(Appointment db)    //from db
+        public AppointmentModel(Appointment db)    //from db1
         {
             Id = db.Id;
             UserId = db.UserId;
             UserName = db.AspNetUser.UserName;
+            Date = db.Date;
+        }
+
+        public AppointmentModel(SelectAllAppointments_Result db)    //from db2
+        {
+            Id = db.Id;
+            UserId = db.UserId;
+            UserName = db.UserName;
             Date = db.Date;
         }
     }

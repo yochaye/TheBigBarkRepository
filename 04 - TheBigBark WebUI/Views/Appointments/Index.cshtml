@@ -27,7 +27,8 @@
 </style>
 
 <table border="1" align="center">
-    <th>Appointment ID</th>
+    <tr>
+        <th>Appointment ID</th>
         <th>Date</th>
         <th>ID</th>
         <th></th>
@@ -40,7 +41,7 @@
             <td>@item.Date</td>
             <td>@item.UserName</td>
             <td>
-                @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
             </td>
         </tr>
     }

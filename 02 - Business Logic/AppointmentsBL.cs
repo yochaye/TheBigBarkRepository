@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
+using System.Data.Entity.Core.Objects;
 
 namespace YE
 {
     public class AppointmentsBL : BaseLogic
     {
-        public List<Appointment> GetAll()
+        public List<SelectAllAppointments_Result> GetAll()
         {
-            return DB.Appointments
-                .Include(item => item.AspNetUser)
-                .ToList();
+            ObjectResult<SelectAllAppointments_Result> x = DB.SelectAllAppointments();
+            return x.ToList();
         }
 
         public Appointment Get(int id)

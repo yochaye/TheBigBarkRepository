@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using _04___TheBigBark_WebUI.Models;
 using Microsoft.AspNet.Identity;
 using YE;
 
@@ -83,8 +84,9 @@ namespace _04___TheBigBark_WebUI.Controllers
         [Authorize(Roles = "Administrators")]
         public ActionResult AdminIndex()
         {
-            List<Appointment> appointments = logic.GetAll();
-            return View("AdminIndex", appointments);
+            List<SelectAllAppointments_Result> appointments = logic.GetAll();
+            List<AppointmentModel> x = appointments.Select(item => new AppointmentModel(item)).ToList();
+            return View("AdminIndex", x);
         }
     }
 }

@@ -1,6 +1,7 @@
-﻿@using YE
+﻿@using _04___TheBigBark_WebUI.Models
+@using YE
 
-@model List<Appointment>
+@model List<_04___TheBigBark_WebUI.Models.AppointmentModel>
 
 @{
     ViewBag.Title = "AdminIndex";
@@ -35,14 +36,14 @@
         <th></th>
     </tr>
 
-    @foreach (Appointment a in Model)
+    @foreach (AppointmentModel item in Model)
     {
         <tr>
-            <td>@a.Id</td>
-            <td>@a.Date</td>
-            <td>@a.AspNetUser.UserName</td>
+            <td>@item.Id</td>
+            <td>@item.Date</td>
+            <td>@item.UserName</td>
             <td>
-                @Html.ActionLink("Delete", "Delete", new { id = a.Id })
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
             </td>
         </tr>
     }

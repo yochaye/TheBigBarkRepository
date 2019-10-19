@@ -1,5 +1,6 @@
 ﻿using _04___TheBigBark_WebUI.Models;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Web.Mvc;
 using YE;
@@ -18,7 +19,8 @@ namespace _04___TheBigBark_WebUI.Controllers
         public ActionResult Index()
         {
             List<AspNetUser> users = usersLogic.GetAll();
-            return View(users);
+            var x = users.Select(item => new UserModel(item)).ToList();
+            return View(x);
         }
 
         [Authorize()]

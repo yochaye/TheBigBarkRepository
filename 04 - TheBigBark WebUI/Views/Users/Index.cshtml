@@ -37,16 +37,16 @@
     </tr>
 
     @foreach (var item in Model)
-        {
-            <tr>
-                <td>@item.UserName</td>
-                <td>@item.Email</td>
-                <td>@item.Id</td>
-                <td>@item.PhoneNumber</td>
-                <td>@item.Appointments</td>
-                <td>
-                    @Html.ActionLink("Delete", "Delete", new { id=item.Id })
-                </td>
-            </tr>
-        }
+    {
+        <tr>
+            <td>@item.UserName</td>
+            <td>@item.Email</td>
+            <td>@item.Id</td>
+            <td>@item.PhoneNumber</td>
+            <td>@item.Appointments</td>
+            <td>
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
 </table>
