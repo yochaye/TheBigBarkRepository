@@ -4,12 +4,14 @@
     ViewBag.Title = "Index";
 }
 
-<div class="main">
+    <div class="main">
 
-    <h2 align="center">Admin Home Page</h2>
+        <h2 align="center">Admin Home Page</h2>
 
-    <a href="https://localhost:44369/Users">Show All Users</a>
-    <br />
-    <a href="https://localhost:44369/Appointments/AdminIndex">Show All Appointments</a>
+        @Html.ActionLink("Add Appointment", "Create", "Appointments")
+        <br />
+        <a href="https://localhost:44369/Users">Show All Users</a>
+        <br />
+        <a href="https://localhost:44369/Appointments/AdminIndex">Show All Appointments</a>
 
-</div>
+    </div>
