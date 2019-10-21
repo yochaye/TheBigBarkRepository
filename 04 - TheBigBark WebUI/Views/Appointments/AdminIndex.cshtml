@@ -20,8 +20,8 @@
     h4 {
         margin-top: 55px;
         margin-bottom: 25px;
-
     }
+
     td, th {
         border: 1px solid #dddddd;
         text-align: left;
@@ -39,47 +39,47 @@
     }
 </script>
 
-@using(Html.BeginForm("AdminIndex", "Appointments"))
+@using (Html.BeginForm("AdminIndex", "Appointments"))
 {
-<div class="filter">
-    <h4>Filter Options :</h4>
-    <div class="form-group">
-        <label for="sdate">From: </label>
-        <input type="date" name="sdate" id="sdate">
-        <label for="edate">To: </label>
-        <input type="date" name="edate" id="edate">
+    <div class="filter">
+        <h4>Filter Options :</h4>
+        <div class="form-group">
+            <label for="sdate">From: </label>
+            <input type="date" name="sdate" id="sdate">
+            <label for="edate">To: </label>
+            <input type="date" name="edate" id="edate">
+        </div>
+        <div class="form-group" style="display:inline-block">
+            <label for="name">name: </label>
+            <input type="text" name="name" id="name">
+        </div>
+
+        <input type="submit" value="סנן">
+        <input type="button" value="נקה סינון" onclick="clearForm();">
     </div>
-    <div class="form-group" style="display:inline-block">
-        <label for="name">name: </label>
-        <input type="text" name="name" id="name">
-    </div>
-
-    <input type="submit" value="סנן">
-    <input type="button" value="נקה סינון" onclick="clearForm();">
-</div>
-<hr/>
+    <hr />
 
 
 
-<table border="1" align="center">
-    <tr>
-        <th>Appointment ID</th>
-        <th>Date</th>
-        <th>ID</th>
-        <th></th>
-    </tr>
-
-    @foreach (AppointmentModel item in Model)
-    {
+    <table border="1" align="center">
         <tr>
-            <td>@item.Id</td>
-            <td>@item.Date</td>
-            <td>@item.UserName</td>
-            <td>
-                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
-            </td>
+            <th>Appointment ID</th>
+            <th>Date</th>
+            <th>User Name</th>
+            <th></th>
         </tr>
-    }
-</table>
 
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Date</td>
+                <td>@item.UserName</td>
+                <td>
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                </td>
+            </tr>
+        }
+    </table>
+
+}<a href="https://localhost:44369">Back</a>
